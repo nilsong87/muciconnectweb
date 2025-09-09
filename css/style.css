@@ -1,0 +1,88 @@
+:root {
+    --primary-color: #1DB954; /* Spotify Green */
+    --dark-color: #121212;
+    --light-dark-color: #181818;
+    --gray-color: #282828;
+    --text-color: #FFFFFF;
+    --text-gray-color: #B3B3B3;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--dark-color);
+    color: var(--text-gray-color);
+    padding-top: 56px; /* Adjust for fixed navbar */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+}
+
+.navbar {
+    background-color: var(--light-dark-color) !important;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=2070&auto=format&fit=crop') no-repeat center center;
+    background-size: cover;
+    padding: 120px 0;
+}
+
+.hero-section .lead {
+    max-width: 600px;
+    margin: 1rem auto;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #1ed760;
+    border-color: #1ed760;
+}
+
+#overview, #tech {
+    background-color: var(--light-dark-color);
+}
+
+#features {
+    background-color: var(--dark-color);
+}
+
+#features .card {
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    border: 1px solid var(--gray-color);
+}
+
+#features .card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+}
+
+#features .card i {
+    color: var(--primary-color);
+}
+
+#tech i {
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+#tech i:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: var(--light-dark-color) !important;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--primary-color) !important;
+}
